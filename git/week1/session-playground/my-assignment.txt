@@ -1,0 +1,4 @@
+This is my Git week 1 assignment practice.
+I am learning how to work with branches, commits, and pull requests.
+I am also learning how changes are tracked by Git.
+This line was added after creating the pull request.
