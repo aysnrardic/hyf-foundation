@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #e63946;
+  --space: 30px;
+}
+
+body {
+  margin: var(--space);
+}
+
+nav {
+  display: flex;
+  gap: var(--space);
+}
+
+header h1 {
+  color: var(--main-color);
+}
+
+.hobbies {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--space);
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: var(--space);
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space);
+}
+
+.product-card {
+  padding: var(--space);
+  border: 1px solid black;
+  animation: card-entry 1s ease-in-out;
+}
+
+.product-card h3 {
+  color: var(--main-color);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+input,
+textarea,
+select {
+  padding: 5px;
+  border: 1px solid black;
+}
+
+form label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+form label input,
+form label textarea,
+form label select {
+  flex: 1;
+}
+
+form label span {
+  width: 60px;
+}
+
+@media (min-width: 700px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1250px) {
+  .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@keyframes card-entry {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

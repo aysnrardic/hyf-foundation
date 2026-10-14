@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HYF Week 1</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Hi I'm Aysenur</h1>
+
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Products</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+
+      <h2>About Me</h2>
+      <p>
+        <img
+          src="https://picsum.photos/id/63/300/200"
+          alt="A cup of coffee on a red background"
+        />
+        I'm from <strong>Turkey</strong> and I'm currently learning web
+        development with
+        <a href="https://www.hackyourfuture.net/" target="_blank"
+          >Hack Your Future</a
+        >. I have a background in
+        <strong>marketing and project management</strong>, but now I'm exploring
+        technology and learning how to build things for the web.
+      </p>
+
+      <p>
+        In my free time, I enjoy
+        <em
+          >doing pilates, cycling around the city, trying new cuisines, and
+          baking at home</em
+        >.
+      </p>
+
+      <ul class="hobbies">
+        <li>I love discovering new restaurants and cuisines.</li>
+        <li>
+          I enjoy trying new coffees and discovering different coffee flavors.
+        </li>
+        <li>Baking is one of my favorite ways to spend a quiet afternoon.</li>
+        <li>I enjoy exploring the city by bike.</li>
+      </ul>
+
+      <h2>Products Table</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>In Stock</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Coffee</td>
+            <td>25 DKK</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Sandwich</td>
+            <td>50 DKK</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>Dessert</td>
+            <td>30 DKK</td>
+            <td>Yes</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Product Cards</h2>
+
+      <div class="product-list">
+        <div class="product-card">
+          <h3>Coffee</h3>
+          <p>Price: 25 DKK</p>
+          <p>In Stock: Yes</p>
+        </div>
+
+        <div class="product-card">
+          <h3>Sandwich</h3>
+          <p>Price: 50 DKK</p>
+          <p>In Stock: No</p>
+        </div>
+
+        <div class="product-card">
+          <h3>Dessert</h3>
+          <p>Price: 30 DKK</p>
+          <p>In Stock: Yes</p>
+        </div>
+      </div>
+
+      <h2>Contact Me</h2>
+
+      <form>
+        <label for="name">
+          <span>Name:</span>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="e.g. Emily Andersen"
+            required
+        /></label>
+        <label for="email">
+          <span>Email:</span>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="e.g. emily@example.com"
+            required
+          />
+        </label>
+        <label for="message">
+          <span>Message:</span>
+          <textarea
+            id="message"
+            name="message"
+            rows="3"
+            cols="30"
+            placeholder="Write your message here..."
+          ></textarea>
+        </label>
+        <label for="topic">
+          <span>Topic:</span>
+          <select id="topic" name="topic">
+            <option value="">Select One</option>
+            <option value="1">General Question</option>
+            <option value="2">Feedback</option>
+            <option value="3">Support</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>
