@@ -1,0 +1,63 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9fbfd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main content */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Website title */
+h1 {
+  font-size: 32px;
+  color: #202938;
+  margin-bottom: 8px;
+}
+
+/* Website slogan */
+main > p {
+  color: #596579;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* Product cards */
+li {
+  background-color: white;
+  border: 1px solid #e2e6ed;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+/* Product names */
+li h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+/* Product price and rating */
+li p {
+  font-size: 14px;
+  color: #4e5b6c;
+  margin: 8px 0;
+}
